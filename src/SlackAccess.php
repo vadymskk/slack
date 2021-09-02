@@ -62,6 +62,16 @@ class SlackAccess
 
 
 	/**
+	 * Returns the authorization data as a JSON formatted string.
+	 *
+	 * @return string   The data in JSON format
+	 */
+	public function to_id() {
+		return $this->team_id;
+	}
+
+
+	/**
 	 * Returns the webhook URL for posting notifications.
 	 *
 	 * @return string   The incoming webhook URL
